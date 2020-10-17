@@ -1,6 +1,10 @@
 {
-
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Grayscaler"
+  },
   "description": "Displays webpage in grayscale. Useful as part of accessibility testing for webpages. ",
+  "author": "Katherine Sinclair",
   "manifest_version": 2,
   "name": "Grayscaler",
   "version": "1.0",
