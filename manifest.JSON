@@ -1,28 +1,26 @@
 {
-    "browser_action": {
-      "browser_style": true,
-      "default_title": "Grayscale Simulator",
-      "default_icon": {
-        
-      }
-    },
-    "content_scripts": [
-      {
-        "matches": [ "<all_urls>" ],
-        "js": [ "contentScript.js" ]
-      }
-    ],
-    "description": "Simulates grayscale effect. ",
-    "homepage_url": "https://github.com/sinc0115/grayscale-extension"
-    },
-    "manifest_version": 2,
-    "name": "Grayscale Simulator",
-    "permissions": [
-      "<all_urls>",
-      "notifications",
-      "storage",
-      "activeTab"
-    ],
-    "version": "1",
-    "author": "Katherine Sinclair"
-  }
+
+  "description": "Displays webpage in grayscale. Useful as part of accessibility testing for webpages. ",
+  "manifest_version": 2,
+  "name": "Grayscaler",
+  "version": "1.0",
+  "homepage_url": "https://github.com/sinc0115/grayscale-extension",
+  "icons": {
+    "48": "icons/invert_colors-black-24dp.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+
+  "permissions": [
+    "<all_urls>",
+    "notifications",
+    "storage",
+    "activeTab"
+  ]
+
+}
