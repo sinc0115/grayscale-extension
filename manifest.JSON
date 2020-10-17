@@ -1,5 +1,8 @@
 {
   "browser_action": {
+    "default_icon": {
+      "24": "icons/invert_colors-black-24dp.svg"
+    },
     "browser_style": true,
     "default_title": "Grayscaler"
   },
@@ -10,7 +13,7 @@
   "version": "1.0",
   "homepage_url": "https://github.com/sinc0115/grayscale-extension",
   "icons": {
-    "48": "icons/invert_colors-black-24dp.svg"
+    "24": "icons/invert_colors-black-24dp.svg"
   },
 
   "content_scripts": [
@@ -19,6 +22,9 @@
       "js": ["contentScript.js"]
     }
   ],
+  "background": {
+      "scripts": ["backgroundScript.js"]
+  },
 
   "permissions": [
     "<all_urls>",
